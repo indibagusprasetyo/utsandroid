@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/dimen_12dp"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity2">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="23dp"
+        android:layout_height="33dp"
+        android:layout_marginBottom="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/cekform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.046"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.333"
+        app:srcCompat="@drawable/ic_back" />
+
+    <TextView
+        android:id="@+id/cekform"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/cek"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_18sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/jenistes3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.092"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/jenistes4"
+        android:layout_width="@dimen/dimen_340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:inputType="text"
+        android:text="Name"
+        android:textSize="@dimen/dimen_14sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/konfirmasitglform2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/konfirmasitglform2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/konfirmasitglform"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_12sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/konfirmasitglform3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.06"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/konfirmasitglform3"
+        android:layout_width="@dimen/dimen_340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:inputType="text"
+        android:text="Name"
+        android:textSize="@dimen/dimen_14sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/nik2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.586"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/nik2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/nikform"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_12sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/editTextText3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/jenistes3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/jenistes"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_12sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/jenistes4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.053"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/nama2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/namaform"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_12sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/nama3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="@dimen/dimen_340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:inputType="text"
+        android:text="Name"
+        android:textSize="@dimen/dimen_14sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/nama2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/nama3"
+        android:layout_width="@dimen/dimen_340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:inputType="text"
+        android:text="Name"
+        android:textSize="@dimen/dimen_14sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/tgllahir2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tgllahir2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/tgllahirform"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_12sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/tgllahir3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/tgllahir3"
+        android:layout_width="@dimen/dimen_340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="21dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:inputType="text"
+        android:text="Name"
+        android:textSize="@dimen/dimen_14sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/jkform2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/jkform2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/jkform"
+        android:textSize="@dimen/dimen_12sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/jkform3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/jkform3"
+        android:layout_width="@dimen/dimen_340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="19dp"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:inputType="text"
+        android:text="Name"
+        android:textSize="@dimen/dimen_14sp"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/hubform5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/hubform5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:fontFamily="@font/roboto"
+        android:text="@string/hubform"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dimen_12sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/hubform6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.075"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/hubform6"
+        android:layout_width="@dimen/dimen_340dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:fontFamily="@font/roboto"
+        android:inputType="text"
+        android:text="Name"
+        android:textSize="@dimen/dimen_14sp"
+        android:typeface="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="570dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/dimen_340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="77dp"
+        android:backgroundTint="@color/wildo"
+        android:fontFamily="@font/roboto"
+        android:text="@string/cek1"
+        android:textSize="@dimen/dimen_12sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toTopOf="@+id/ubah"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hubform6" />
+
+    <Button
+        android:id="@+id/ubah"
+        android:layout_width="@dimen/dimen_340dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/roboto"
+        android:text="@string/ubah"
+        android:textColor="@color/breeze"
+        android:textSize="@dimen/dimen_12sp"
+        android:textStyle="bold"
+        android:typeface="normal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:rippleColor="@color/wildo"
+        app:strokeColor="@color/wildo"
+        app:strokeWidth="1dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">UTS_Praktikum_Android</string>
+
+    <!--    activity main   -->
+    <string name="heading1">Form Pengisian Data</string>
+    <string name="info1">Info</string>
+    <string name="info2">Form berikut ini bertujuan untuk memberikan informasi kepada pusat agar dapat mudah dilaporkan</string>
+    <string name="jenistes">Jenis Tes</string>
+    <string name="harus">Harus Diisi</string>
+    <string name="jenistes1">Rapid Antigen</string>
+    <string name="jenistes2">PCR</string>
+    <string name="konfirmasitglform">Tanggal Konfirmasi</string>
+    <string name="pilihtgl">Pilih Tanggal</string>
+    <string name="nikform">NIK</string>
+    <string name="masuknik">Masukan NIK</string>
+    <string name="namaform">Nama</string>
+    <string name="masuknama">Masukan nama</string>
+    <string name="tgllahirform">Tanggal Lahir</string>
+    <string name="jkform">Jenis Kelamin</string>
+    <string name="jk1">Laki-laki</string>
+    <string name="jk2">Perempuan</string>
+    <string name="hubform">Hubungan Dengan Anda</string>
+    <string name="hubform1">Orangtua</string>
+    <string name="hubform2">Suami/Istri</string>
+    <string name="hubform3">Anak</string>
+    <string name="hubform4">Kerabat Lainnya</string>
+    <string name="Aggreement">Dengan ini saya menyetujui bahwa data yang saya isikan adalah benar</string>
+    <string name="next">Selanjutnya</string>
+
+    <!--    second activity    -->
+    <string name="cek">Cek Kembali Isian Data</string>
+    <string name="cek1">Cek Hasil Tes</string>
+    <string name="ubah">Ubah</string>
+
+    <!--    third activity   -->
+    <string name="berhasil">Berhasil Disimpan</string>
+    <string name="ucapan">Terima kasih, laporan Anda membantu kami dalam melakukan penanganan kasus secara tepat.</string>
+    <string name="ok">Ok</string>
+
+
+</resources>

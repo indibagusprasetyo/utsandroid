@@ -1,0 +1,491 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dimen_12dp">
+
+        <ImageView
+            android:id="@+id/sign_kembali"
+            android:layout_width="24dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="23dp"
+            app:layout_constraintBottom_toTopOf="@+id/heading1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.034"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/heading1"
+            android:layout_width="@dimen/dimen_200dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="40dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/heading1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_18sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:layout_constraintBottom_toTopOf="@+id/bannerinfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.071"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/bannerinfo"
+            android:layout_width="400dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:srcCompat="@drawable/ic_bannerinfo"
+            tools:layout_editor_absoluteX="-16dp"
+            tools:layout_editor_absoluteY="143dp" />
+
+        <TextView
+            android:id="@+id/info1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="@string/info1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_12sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.034"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="154dp" />
+
+        <TextView
+            android:id="@+id/info2"
+            android:layout_width="345dp"
+            android:layout_height="31dp"
+            android:layout_marginTop="21dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/info2"
+            android:textAlignment="textStart"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:typeface="normal"
+            app:layout_constraintBottom_toTopOf="@+id/bannerinfo"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info1"
+            app:layout_constraintVertical_bias="0.025" />
+
+        <TextView
+            android:id="@+id/jenistes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/jenistes"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_12sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:layout_constraintEnd_toStartOf="@+id/harus1"
+            app:layout_constraintHorizontal_bias="0.48"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bannerinfo" />
+
+        <TextView
+            android:id="@+id/harus1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="14dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/harus"
+            android:textColor="@color/wildo"
+            android:textSize="@dimen/dimen_10sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:layout_constraintBottom_toTopOf="@+id/jenistes1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.236"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/bannerinfo"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <RadioButton
+            android:id="@+id/jenistes1"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dimen_32dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/jenistes1"
+            android:textSize="@dimen/dimen_12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jenistes" />
+
+        <RadioButton
+            android:id="@+id/jenistes2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="26dp"
+            android:buttonTint="#FFFFFF"
+            android:checked="false"
+            android:fontFamily="@font/roboto"
+            android:text="@string/jenistes2"
+            android:textSize="@dimen/dimen_12sp"
+            android:typeface="normal"
+            app:layout_constraintBottom_toTopOf="@+id/konfirmasitglform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jenistes1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/konfirmasitglform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="@string/konfirmasitglform"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_12dp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:layout_constraintEnd_toStartOf="@+id/harus2"
+            app:layout_constraintHorizontal_bias="0.387"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="396dp" />
+
+        <TextView
+            android:id="@+id/harus2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/harus"
+            android:textColor="@color/wildo"
+            android:textSize="@dimen/dimen_10sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:layout_constraintBottom_toTopOf="@+id/pilihtanggal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.389"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/jenistes2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <EditText
+            android:id="@+id/pilihtanggal"
+            android:layout_width="@dimen/dimen_340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="7dp"
+            android:ems="10"
+            android:hint="@string/pilihtgl"
+            android:inputType="date"
+            android:textSize="@dimen/dimen_12sp"
+            app:layout_constraintBottom_toTopOf="@+id/nik"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.226"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/konfirmasitglform"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/nik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/nikform"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_12sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="468dp" />
+
+        <EditText
+            android:id="@+id/nikform"
+            android:layout_width="@dimen/dimen_340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="10dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/masuknik"
+            android:inputType="text"
+            android:textSize="@dimen/dimen_12sp"
+            app:layout_constraintBottom_toTopOf="@+id/nama"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.226"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/nik"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/namaform"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_12sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:layout_constraintBottom_toTopOf="@+id/namaform"
+            app:layout_constraintEnd_toStartOf="@+id/harus3"
+            app:layout_constraintHorizontal_bias="0.363"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/namaform"
+            android:layout_width="@dimen/dimen_340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="11dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/masuknama"
+            android:inputType="text"
+            android:textSize="@dimen/dimen_12sp"
+            android:typeface="normal"
+            app:layout_constraintBottom_toTopOf="@+id/tgllahir"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.226"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/harus3"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/harus3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="280dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/harus"
+            android:textColor="@color/wildo"
+            android:textSize="@dimen/dimen_10sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:layout_editor_absoluteY="537dp" />
+
+        <TextView
+            android:id="@+id/tgllahir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="@string/tgllahirform"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_12sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.037"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="603dp" />
+
+        <EditText
+            android:id="@+id/tgllahirform"
+            android:layout_width="@dimen/dimen_340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:ems="10"
+            android:fontFamily="@font/roboto"
+            android:hint="@string/pilihtgl"
+            android:inputType="date"
+            android:textSize="@dimen/dimen_12sp"
+            android:typeface="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.226"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tgllahir" />
+
+        <TextView
+            android:id="@+id/jkform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/jkform"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_12sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:layout_constraintBottom_toTopOf="@+id/jk1"
+            app:layout_constraintEnd_toStartOf="@+id/harus4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tgllahirform" />
+
+        <RadioButton
+            android:id="@+id/jk1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="@color/wildo"
+            android:buttonTint="@color/wildo"
+            android:checked="true"
+            android:fontFamily="@font/roboto"
+            android:text="@string/jk1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_12sp"
+            app:layout_constraintBottom_toTopOf="@+id/jk2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/harus4"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <RadioButton
+            android:id="@+id/jk2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/jk2"
+            android:textSize="@dimen/dimen_12sp"
+            android:typeface="normal"
+            app:layout_constraintBottom_toTopOf="@+id/hubform"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.053"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/hubform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="7dp"
+            android:layout_marginBottom="3dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/hubform"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_12sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            app:layout_constraintBottom_toTopOf="@+id/hubform1"
+            app:layout_constraintEnd_toStartOf="@+id/harus5"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/harus5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="@string/harus"
+            android:textColor="@color/wildo"
+            android:textSize="@dimen/dimen_10sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            tools:layout_editor_absoluteX="152dp"
+            tools:layout_editor_absoluteY="821dp" />
+
+        <RadioButton
+            android:id="@+id/hubform2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="@string/hubform2"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_12sp"
+            android:typeface="normal"
+            app:layout_constraintBottom_toTopOf="@+id/hubform3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.05"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioButton
+            android:id="@+id/hubform1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="@string/hubform1"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_12sp"
+            android:typeface="normal"
+            app:layout_constraintBottom_toTopOf="@+id/hubform2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.051"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/harus5"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <RadioButton
+            android:id="@+id/hubform4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="@string/hubform4"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_12sp"
+            android:typeface="normal"
+            app:layout_constraintBottom_toTopOf="@+id/setuju"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.055"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioButton
+            android:id="@+id/hubform3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="@string/hubform3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_12sp"
+            android:typeface="normal"
+            app:layout_constraintBottom_toTopOf="@+id/hubform4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.048"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/setuju"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="14dp"
+            android:fontFamily="@font/roboto"
+            android:text="@string/Aggreement"
+            android:textSize="@dimen/dimen_10sp"
+            android:typeface="normal"
+            app:layout_constraintBottom_toTopOf="@+id/button3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="358dp"
+            android:layout_height="47dp"
+            android:backgroundTint="@color/wildo"
+            android:text="@string/next"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/harus4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="@string/harus"
+            android:textColor="@color/wildo"
+            android:textSize="@dimen/dimen_10sp"
+            android:textStyle="bold"
+            android:typeface="normal"
+            tools:layout_editor_absoluteX="104dp"
+            tools:layout_editor_absoluteY="683dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
